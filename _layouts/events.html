@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .event {
+            overflow: hidden;
+            text-align: center;
+        }
+        .event img {
+            width: 100%;
+            height: auto;
+        }
+  </style>
+
+  </head>
+
+  <body>
+    {% include nav.html %}
+    <h1>{{page.title}}</h1>
+
+    <h2>Upcoming Events</h2>
+    <div class="grid">
+        {% assign upcoming_events = site.posts | where: "categories", "event" %}
+        {% assign current_time = site.time | date: "%s" %}
+        {% for event in upcoming_events %}
+            {% if event.event-date %}
+                {% assign event_date = event.event-date | date: "%s" %}
+                {% if event_date > current_time %}
+                    <div class="event">
+                        <a href="{{ event.url }}">
+                            {% if event.cover_image %}
+                                <img src="{{ event.cover_image }}" alt="{{ event.title }} cover image">
+                            {% endif %}
+                        </a>
+                        <p>{{ event.event-date | date: "%B %d, %Y" }}</p>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+    
+    <h2>Past Events</h2>
+    <div class="grid">
+        {% assign past_events = site.posts | where: "categories", "event" %}
+        {% assign current_time = site.time | date: "%s" %}
+        {% for event in past_events %}
+            {% if event.event-date %}
+                {% assign event_date = event.event-date | date: "%s" %}
+                {% if event_date <= current_time %}
+                    <div class="event">
+                        <a href="{{ event.url }}">
+                            {% if event.cover_image %}
+                                <img src="{{ event.cover_image }}" alt="{{ event.title }} cover image">
+                            {% endif %}
+                        </a>
+                        <p>{{ event.event-date | date: "%B %d, %Y" }}</p>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+    
+
+</body>
+
+{% include nav.js %}
+
+</html>

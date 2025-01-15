@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .news {
+            overflow: hidden;
+            text-align: center;
+        }
+        .news img {
+            width: 100%;
+            height: auto;
+        }
+  </style>
+
+
+
+  </head>
+
+  <body>
+    {% include nav.html %}
+    <h1>{{page.title}}</h1>
+    {{ content }}
+
+    <div class="grid">
+      {% assign news = site.posts | where: "categories", "news" | sort: "date" | reverse %}
+      {% for news in news %}
+          <div class="news">
+              <a href="{{ news.link }}" target="_blank">
+                  {% if news.cover_image %}
+                      <img src="{{ news.cover_image }}" alt="{{ news.title }} cover image">
+                  {% endif %}
+              </a>
+              <p>{{ news.date | date: "%B %d, %Y" }}</p>
+          </div>
+      {% endfor %}
+  </div>
+</body>
+
+{% include nav.js %}
+
+</html>

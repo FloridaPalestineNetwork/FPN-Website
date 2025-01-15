@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+    {% include nav.html %}
+    {{ content }}
+
+    <div class="container">
+        <div class="column">
+            <h2>Next Event</h2>
+            {% assign next_event = nil %}
+            {% assign closest_event_date = nil %}
+
+            {% for event in site.posts %}
+            {% if event.categories contains "event" and event.event-date %}
+            {% assign event_date = event.event-date | date: "%s" %}
+            {% assign current_date = site.time | date: "%s" %}
+            {% if event_date > current_date %}
+            {% if closest_event_date == nil or event_date < closest_event_date %} {% assign
+                closest_event_date=event_date %} {% assign next_event=event %} {% endif %} {% endif %} {% endif %} {%
+                endfor %} {% if next_event %} <a href="{{ next_event.url }}">
+                <img class="image_post" src="{{ next_event.cover_image }}" alt="{{ next_event.title }} cover image">
+                </a>
+                {% else %}
+                <p>No upcoming events.</p>
+                {% endif %}
+        </div>
+
+
+        <div class="column">
+            <h2>Latest Article</h2>
+            {% assign latest_article = site.posts | where: "categories", "article" | first %}
+            {% if latest_article %}
+            <a href="{{ latest_article.url }}">
+                <img class="image_post" src="{{ latest_article.cover_image }}"
+                    alt="{{ latest_article.title }} cover image">
+            </a>
+            {% else %}
+            <p>No articles available.</p>
+            {% endif %}
+        </div>
+
+        <div class="column">
+            <h2>Latest News</h2>
+            {% assign latest_news = site.posts | where: "categories", "news" | first %}
+            {% if latest_news %}
+            <a href="{{ latest_news.link }}" target="_blank">
+                <img class="image_post" src="{{ latest_news.cover_image }}" alt="{{ latest_news.title }} cover image">
+            </a>
+            {% else %}
+            <p>No news available.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+{% include nav.js %}
+
+</html>

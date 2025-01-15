@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>News - FPN</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .news {
+            overflow: hidden;
+            text-align: center;
+        }
+        .news img {
+            width: 100%;
+            height: auto;
+        }
+  </style>
+
+
+
+  </head>
+
+  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="topnav" id="myTopnav">
+    <a class="logo" href="/index.html"><img alt="Logo" src="/assets/images/logo.jpg"></a>
+    
+    
+    <a class="nav_link" href="/events/">Events</a>
+    
+    <a class="nav_link" href="/articles/">Articles</a>
+    
+    <a class="nav_link" href="/news/">News</a>
+    
+    <a class="nav_link" href="/committees/">Committees</a>
+    
+    <a class="nav_link" href="/get_involved/">Get Involved</a>
+    
+    <a class="nav_link" href="/about/">About</a>
+    
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+</div>
+    <h1>News</h1>
+    
+
+
+    <div class="grid">
+      
+      
+          <div class="news">
+              <a href="https://www.aljazeera.com/news/2025/1/10/deaths-from-israeli-attacks-in-gaza-undercounted-by-41-percent-study-finds" target="_blank">
+                  
+                      <img src="/assets/images/news_aljazeera_palestinian_death_undercount.jpg" alt="Palestinian Death Undercount cover image">
+                  
+              </a>
+              <p>January 10, 2025</p>
+          </div>
+      
+          <div class="news">
+              <a href="https://bdsmovement.net/Indicators-BDS-Global-Impact-July-December-2024" target="_blank">
+                  
+                      <img src="/assets/images/news_bds_indicators_of_the_BDS_movements_impact.jpg" alt="Indicators of the BDS Movements Impact cover image">
+                  
+              </a>
+              <p>January 02, 2025</p>
+          </div>
+      
+  </div>
+</body>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+} 
+</script>
+
+</html>
