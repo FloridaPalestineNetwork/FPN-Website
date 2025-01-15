@@ -44,7 +44,7 @@
 
             <div class="column">
                 <h2>Latest News</h2>
-                {% assign news = site.posts | where: "categories", "news" | sort: "date" | reverse %}
+                {% assign news = site.posts | where: "categories", "news" | sort: "date" | reverse | limit: 3 %}
                 {% for news in news %}
                 <div class="news">
                     <a href="{{ news.link }}" target="_blank">
@@ -74,9 +74,6 @@
             dui laoreet ad. Nullam arcu convallis mauris sit egestas urna risus. Erat tristique ornare curae imperdiet
             eros urna sociosqu sem torquent. Augue nulla varius libero tincidunt fusce convallis. Odio fusce nibh augue
             a viverra maximus netus.</p>
-
-
-
 
     </div>
 </body>

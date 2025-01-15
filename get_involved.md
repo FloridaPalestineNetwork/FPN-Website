@@ -6,8 +6,10 @@ menu: true
 order: 5
 ---
 
-<div class=button>
-<a href="https://forms.gle/dYkJYWZVAa7stD2w8" target="_blank">Join FPN</a>
+<div class="button-container">
+    <div class=button>
+    <a href="https://forms.gle/dYkJYWZVAa7stD2w8" target="_blank">Join FPN</a>
+    </div>
 </div>
 
 ## Follow Us

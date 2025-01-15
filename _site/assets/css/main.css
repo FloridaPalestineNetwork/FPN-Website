@@ -7,18 +7,63 @@ body {
 body {
   background-color: #172d13;
   color: white;
-  font-size: large;
   margin: 0 auto;
+  background-image: url("/assets/images/backgrounds_pattern_transparent.png");
+  background-repeat: repeat;
+  background-size: 150px;
+  font-size: 20px;
+  padding: 0px;
 }
 
 .narrow {
   max-width: 950px;
+  min-height: 100vh;
   text-align: center;
   margin: 0 auto;
   padding: 20px;
+  background-color: #172d13;
 }
 
-/* Links - Start */
+/* ----------------------------------------------------------- Fonts ----------------------------------------------------------- */
+@font-face {
+  font-family: "Newsreader Variable";
+  src: url("/assets/fonts/newsreader/fonts/variable/woff/Newsreader%5Bopsz,wght%5D.woff") format("woff"), url("/assets/fonts/newsreader/fonts/variable/woff2/Newsreader%5Bopsz,wght%5D.woff2") format("woff2");
+  font-weight: 100 900; /* Define the weight range */
+  font-style: normal; /* You can also define italic styles if available */
+}
+body {
+  font-family: "Newsreader Variable", sans-serif;
+  font-weight: 400; /* Normal weight */
+}
+
+h1 {
+  font-family: "Newsreader Variable", sans-serif;
+  font-weight: 700; /* Bold weight */
+}
+
+h2 {
+  font-family: "Newsreader Variable", sans-serif;
+  font-weight: 600; /* Semi-bold weight */
+}
+
+h4 {
+  font-family: "Newsreader Variable", sans-serif;
+  font-weight: 600; /* Semi-bold weight */
+}
+
+p {
+  font-family: "Newsreader Variable", sans-serif;
+  font-weight: 400; /* Light weight */
+}
+
+em {
+  font-family: "Newsreader Variable", sans-serif;
+  font-style: italic; /* If the variable font supports italic */
+  font-weight: 400; /* Normal weight for italic */
+}
+
+/* ----------------------------------------------------------- Fonts ----------------------------------------------------------- */
+/* ----------------------------------------------------------- Links ----------------------------------------------------------- */
 a {
   color: white;
   text-decoration: none;
@@ -41,23 +86,7 @@ a:active {
   /* Color when the link is clicked */
 }
 
-/* Links - End */
-/* Image Post - Start */
-.image_post {
-  width: 100%;
-  max-width: 300px;
-}
-
-p img {
-  display: block;
-  /* Makes the image a block element */
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  /* Center the image if desired */
-}
-
-/* Image Post - End */
+/* ----------------------------------------------------------- Links ----------------------------------------------------------- */
 /* ----------------------------------------------------------- Button ---------------------------------------------------------- */
 .button-container {
   display: flex; /* Use flexbox for layout */
@@ -77,6 +106,8 @@ p img {
   display: inline-block;
   font-size: 25px;
   border-radius: 20px;
+  font-weight: 700; /* Bold weight */
+  width: 90%;
 }
 
 .button a {
@@ -100,6 +131,20 @@ p img {
 
 /* ----------------------------------------------------------- Button ---------------------------------------------------------- */
 /* ----------------------------------------------------------- Posts ----------------------------------------------------------- */
+.image_post {
+  width: 100%;
+  max-width: 300px;
+}
+
+p img {
+  display: block;
+  /* Makes the image a block element */
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  /* Center the image if desired */
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -136,6 +181,16 @@ p img {
   height: auto;
 }
 
+.news h4 {
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 5px; /* Adjust this value as needed */
+}
+
+.news p {
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 30px;
+}
+
 /* ----------------------------------------------------------- Posts ----------------------------------------------------------- */
 /* ---------------------------------------------------------- Columns ---------------------------------------------------------- */
 .container {
@@ -146,7 +201,6 @@ p img {
 
 .column {
   width: 30%;
-  padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -176,7 +230,8 @@ p img {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
+  font-weight: 700; /* Bold weight */
 }
 
 /* Change the color of links on hover */
