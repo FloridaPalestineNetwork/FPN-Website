@@ -1,0 +1,33 @@
+# Jekyll build files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Gem files
+*.gem
+
+# Bundler config
+/.bundle/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.vscodium/
+*.code-workspace
+
+# Other files to ignore
+node_modules/
+package-lock.json
+yarn-error.log

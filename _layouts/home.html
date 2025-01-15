@@ -1,66 +1,86 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
-</head>
+{% include header.html %}
 
 <body>
     {% include nav.html %}
-    {{ content }}
 
-    <div class="container">
-        <div class="column">
-            <h2>Next Event</h2>
-            {% assign next_event = nil %}
-            {% assign closest_event_date = nil %}
+    <div class="narrow">
+        {{ content }}
 
-            {% for event in site.posts %}
-            {% if event.categories contains "event" and event.event-date %}
-            {% assign event_date = event.event-date | date: "%s" %}
-            {% assign current_date = site.time | date: "%s" %}
-            {% if event_date > current_date %}
-            {% if closest_event_date == nil or event_date < closest_event_date %} {% assign
-                closest_event_date=event_date %} {% assign next_event=event %} {% endif %} {% endif %} {% endif %} {%
-                endfor %} {% if next_event %} <a href="{{ next_event.url }}">
-                <img class="image_post" src="{{ next_event.cover_image }}" alt="{{ next_event.title }} cover image">
+        <div class="container">
+            <div class="column">
+                <h2>Next Event</h2>
+                {% assign next_event = nil %}
+                {% assign closest_event_date = nil %}
+
+                {% for event in site.posts %}
+                {% if event.categories contains "event" and event.event-date %}
+                {% assign event_date = event.event-date | date: "%s" %}
+                {% assign current_date = site.time | date: "%s" %}
+                {% if event_date > current_date %}
+                {% if closest_event_date == nil or event_date < closest_event_date %} {% assign
+                    closest_event_date=event_date %} {% assign next_event=event %} {% endif %} {% endif %} {% endif %}
+                    {% endfor %} {% if next_event %} <a href="{{ next_event.url }}">
+                    <img class="image_post" src="{{ next_event.cover_image }}" alt="{{ next_event.title }} cover image">
+                    </a>
+                    {% else %}
+                    <p>No upcoming events.</p>
+                    {% endif %}
+            </div>
+
+
+            <div class="column">
+                <h2>Latest Article</h2>
+                {% assign latest_article = site.posts | where: "categories", "article" | first %}
+                {% if latest_article %}
+                <a href="{{ latest_article.url }}">
+                    <img class="image_post" src="{{ latest_article.cover_image }}"
+                        alt="{{ latest_article.title }} cover image">
                 </a>
                 {% else %}
-                <p>No upcoming events.</p>
+                <p>No articles available.</p>
                 {% endif %}
+            </div>
+
+            <div class="column">
+                <h2>Latest News</h2>
+                {% assign news = site.posts | where: "categories", "news" | sort: "date" | reverse %}
+                {% for news in news %}
+                <div class="news">
+                    <a href="{{ news.link }}" target="_blank">
+                        <h4>{{ news.title }}</h4>
+                    </a>
+                    <p>{{ news.date | date: "%B %d, %Y" }}</p>
+                </div>
+                {% endfor %}
+            </div>
         </div>
 
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Tristique inceptos potenti et eget; diam quisque
+            pretium. Non malesuada torquent facilisis tincidunt at ante? Consequat est augue curabitur ridiculus neque.
+            Euismod quisque facilisis augue accumsan cursus a. Placerat fermentum tincidunt pulvinar faucibus leo. Odio
+            quam nec nam mauris hendrerit habitant iaculis. Faucibus dignissim aliquet dignissim at ultricies facilisi
+            sodales. Pulvinar lacus massa, molestie mattis eget inceptos lacinia.</p>
 
-        <div class="column">
-            <h2>Latest Article</h2>
-            {% assign latest_article = site.posts | where: "categories", "article" | first %}
-            {% if latest_article %}
-            <a href="{{ latest_article.url }}">
-                <img class="image_post" src="{{ latest_article.cover_image }}"
-                    alt="{{ latest_article.title }} cover image">
-            </a>
-            {% else %}
-            <p>No articles available.</p>
-            {% endif %}
-        </div>
+        <p>Ridiculus feugiat eros lacus penatibus imperdiet nisl mauris porttitor. Ultrices commodo mi conubia ex
+            facilisi nulla. Dapibus sapien nisi lorem mattis eget praesent iaculis aliquam leo. Tellus aliquet tempus
+            diam gravida sed vel. Diam nibh enim blandit; nibh euismod inceptos et congue. Tincidunt nec aliquam
+            torquent sapien natoque phasellus. Vivamus fusce viverra lobortis laoreet, vestibulum pharetra curae
+            potenti. Ex suscipit quis tristique adipiscing; volutpat dictumst. Ultrices tempor eu est nostra conubia
+            inceptos montes id. Elit torquent pretium conubia finibus imperdiet dignissim mauris.</p>
 
-        <div class="column">
-            <h2>Latest News</h2>
-            {% assign latest_news = site.posts | where: "categories", "news" | first %}
-            {% if latest_news %}
-            <a href="{{ latest_news.link }}" target="_blank">
-                <img class="image_post" src="{{ latest_news.cover_image }}" alt="{{ latest_news.title }} cover image">
-            </a>
-            {% else %}
-            <p>No news available.</p>
-            {% endif %}
-        </div>
+        <p>Tellus quis interdum efficitur nibh lacus nostra tempor. Tempor eros litora eget magna mi nascetur ipsum
+            ligula massa. Sit cras mus mattis volutpat mattis. Suspendisse tincidunt lorem lobortis inceptos facilisi
+            dui laoreet ad. Nullam arcu convallis mauris sit egestas urna risus. Erat tristique ornare curae imperdiet
+            eros urna sociosqu sem torquent. Augue nulla varius libero tincidunt fusce convallis. Odio fusce nibh augue
+            a viverra maximus netus.</p>
+
+
+
+
     </div>
 </body>
 
 {% include nav.js %}
 
-</html>
+{% include footer.html %}

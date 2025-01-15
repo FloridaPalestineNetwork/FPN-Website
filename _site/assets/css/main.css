@@ -9,8 +9,12 @@ body {
   color: white;
   font-size: large;
   margin: 0 auto;
+}
+
+.narrow {
   max-width: 950px;
   text-align: center;
+  margin: 0 auto;
 }
 
 /* Links - Start */
@@ -37,21 +41,6 @@ a:active {
 }
 
 /* Links - End */
-/* Button - Start */
-.button {
-  background-color: white;
-  /* Green */
-  border: none;
-  color: #479459;
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  border-radius: 20px;
-}
-
-/* Button - End */
 /* Image Post - Start */
 .image_post {
   width: 100%;
@@ -68,7 +57,86 @@ p img {
 }
 
 /* Image Post - End */
-/* ---------------------------------------- Columns ---------------------------------------- */
+/* ----------------------------------------------------------- Button ---------------------------------------------------------- */
+.button-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange buttons in a column */
+  align-items: center; /* Center buttons horizontally */
+  gap: 20px; /* Space between buttons */
+  margin: 20px 0; /* Space above and below the button container */
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: #479459;
+  padding: 10px 20px; /* Adjusted padding for better appearance */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 20px;
+}
+
+.button a {
+  color: #479459;
+}
+
+.button a:visited {
+  color: white;
+  /* Color after the link has been visited */
+}
+
+.button a:hover {
+  color: #e4312b;
+  /* Color when the mouse is over the link */
+}
+
+.button a:active {
+  color: #e4312b;
+  /* Color when the link is clicked */
+}
+
+/* ----------------------------------------------------------- Button ---------------------------------------------------------- */
+/* ----------------------------------------------------------- Posts ----------------------------------------------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.event {
+  overflow: hidden;
+  text-align: center;
+}
+
+.event img {
+  width: 100%;
+  height: auto;
+}
+
+.article {
+  overflow: hidden;
+  text-align: center;
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+}
+
+.news {
+  overflow: hidden;
+  text-align: center;
+}
+
+.news img {
+  width: 100%;
+  height: auto;
+}
+
+/* ----------------------------------------------------------- Posts ----------------------------------------------------------- */
+/* ---------------------------------------------------------- Columns ---------------------------------------------------------- */
 .container {
   display: flex;
   justify-content: space-between;
@@ -89,8 +157,8 @@ p img {
     width: 100%; /* Make each column take full width */
   }
 }
-/* ---------------------------------------- Columns ---------------------------------------- */
-/* ---------------------------------------- Top Nav ---------------------------------------- */
+/* ---------------------------------------------------------- Columns ---------------------------------------------------------- */
+/* ---------------------------------------------------------- Top Nav ---------------------------------------------------------- */
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #479459;
@@ -139,7 +207,9 @@ p img {
   display: block; /* Ensure it behaves as a block element */
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 600 pixels wide, 
+hide all links, except for the first one ("Home"). 
+Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 768px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -162,6 +232,6 @@ p img {
     text-align: center;
   }
 }
-/* ---------------------------------------- Top Nav ---------------------------------------- */
+/* ---------------------------------------------------------- Top Nav --------------------------------------------------------- */
 
 /*# sourceMappingURL=main.css.map */
