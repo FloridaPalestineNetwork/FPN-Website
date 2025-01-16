@@ -69,6 +69,3 @@ order: 5
     <a href="http://bit.ly/resignrandyfine" target="_blank">Resign Randy Fine Campaign</a>
     </div>
 </div>
-
-## Get in Touch
-FloridaPalestineNetwork@proton.me

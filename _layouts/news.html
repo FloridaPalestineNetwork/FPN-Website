@@ -5,20 +5,29 @@
     {% include nav.html %}
 
     <div class="narrow">
-        <h1>{{page.title}}</h1>
-        {{ content }}
+        <main>
+            <h1>{{page.title}}</h1>
+            <p style="margin-bottom: 40px;"> Lorem ipsum odor amet, consectetuer adipiscing elit. Tristique inceptos potenti et eget; diam quisque
+                pretium. Non malesuada torquent facilisis tincidunt at ante? Consequat est augue curabitur ridiculus
+                neque. Euismod quisque facilisis augue accumsan cursus a. Placerat fermentum tincidunt pulvinar faucibus
+                leo. Odio quam nec nam mauris hendrerit habitant iaculis. Faucibus dignissim aliquet dignissim at
+                ultricies facilisi sodales. Pulvinar lacus massa, molestie mattis eget inceptos lacinia.</p>
 
 
-        {% assign news = site.posts | where: "categories", "news" | sort: "date" | reverse %}
-        {% for news in news %}
-        <div class="news">
-            <a href="{{ news.link }}" target="_blank"><h3>{{ news.title }} - {{ news.date | date: "%B %d, %Y" }}</h3></a>
-        </div>
-        {% endfor %}
-
+            {% assign news = site.posts | where: "categories", "news" | sort: "date" | reverse %}
+            {% for news in news %}
+            <div class="news">
+                <a href="{{ news.link }}" target="_blank">
+                    <h3 style="margin-top: 0px; margin-bottom: 0px;">{{ news.title }}</h3>
+                    <p style="margin-top: 0px; margin-bottom: 40px;"><em>{{ news.date | date: "%B %d, %Y" }}</em></p>
+                </a>
+            </div>
+            {% endfor %}
+        </main>
+        {% include footer.html %}
     </div>
 </body>
 
 {% include nav.js %}
 
-{% include footer.html %}
+</html>

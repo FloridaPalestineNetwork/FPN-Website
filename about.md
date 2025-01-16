@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: About Us
+permalink: /about_us/
 menu: true
 order: 6
 ---

@@ -13,13 +13,28 @@ body {
     padding: 0px;
 }
 
+footer {
+    text-align: center;
+    background-color: #172d13;
+}
+
+main {
+    flex: 1; /* Allow the main content to grow and fill the available space */
+}
+
 .narrow {
+    display: flex;
+    flex-direction: column;
     max-width: 950px;
-    min-height: 100vh;
+    flex: 1;
     text-align: center;
     margin: 0 auto;
     padding: 20px;
     background-color: #172d13;
+    min-height: 95vh;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.5);
+    position: relative; /* Optional: if you want to control stacking context */
+    z-index: 1; /* Ensure it is below the topnav */
 }
 
 /* ----------------------------------------------------------- Fonts ----------------------------------------------------------- */
@@ -104,19 +119,20 @@ a:active {
 .button {
     background-color: white;
     border: none;
-    color: #479459;
+    color: #149954;
     padding: 10px 20px; /* Adjusted padding for better appearance */
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 25px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-weight: 700; /* Bold weight */
     width: 90%;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.5);
 }
 
 .button a {
-    color: #479459;
+    color: #149954;
 }
 
 .button a:visited {
@@ -141,6 +157,7 @@ a:active {
 .image_post {
     width: 100%;
     max-width: 300px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.5);
 }
 
 p img {
@@ -150,6 +167,7 @@ p img {
     max-width: 600px;
     margin: 0 auto;
     /* Center the image if desired */
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.5);
 }
 
 .grid {
@@ -161,21 +179,25 @@ p img {
 .event {
     overflow: hidden;
     text-align: center;
+    padding: 10px;
 }
 
 .event img {
     width: 100%;
     height: auto;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.5);
 }
 
 .article {
     overflow: hidden;
     text-align: center;
+    padding: 10px;
 }
 
 .article img {
     width: 100%;
     height: auto;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.5);
 }
 
 .news {
@@ -211,7 +233,7 @@ p img {
     width: 30%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     .container {
         flex-direction: column; /* Change to column layout */
         align-items: stretch; /* Ensure columns take full width */
@@ -229,10 +251,16 @@ p img {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #479459;
+    justify-content: space-between; /* Distribute space evenly between items */
+    align-items: center; /* Center items vertically */
+    background-color: #149954;
     overflow: hidden;
-    margin: 0; /* Remove margin */
+    margin: 0 auto; /* Center the topnav horizontally */
     padding: 0; /* Remove padding */
+    max-width: 990px; /* Set the maximum width */
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    position: relative; /* Optional: if you want to control stacking context */
+    z-index: 10; /* Ensure it is above the narrow section */
 }
 
 /* Style the links inside the navigation bar */
@@ -248,14 +276,14 @@ p img {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #479459;
+.topnav a:hover:not(:first-child) {
+    background-color: white;
     color: #e4312b;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #479459;
+    background-color: #149954;
     color: white;
 }
 
@@ -280,7 +308,7 @@ p img {
 /* When the screen is less than 600 pixels wide, 
 hide all links, except for the first one ("Home"). 
 Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -308,27 +336,3 @@ Show the link that contains should open and close the topnav (.icon) */
 }
 
 /* ---------------------------------------------------------- Top Nav --------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
