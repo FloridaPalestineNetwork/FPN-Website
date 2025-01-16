@@ -1,7 +1,7 @@
 ---
 title: Beginners Tatreez Workshop with Badan Collective
 date: 2025-01-01
-event-date: 2025-02-12
+event-date: 2025-02-09
 event-time: 2-5PM
 event-location: Coral Springs
 layout: post-event
