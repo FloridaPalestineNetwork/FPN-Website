@@ -25,23 +25,21 @@
         <p style="margin-top: 0px;"><em>Palestine Will Be Free</em></p>
     </div>
 
-    <nav style="margin-bottom: 30px;">
+    <nav style="margin-bottom: 10px;">
         {% assign sorted_pages = site.pages | where: "menu", "true" | sort: "order", "last" %}
         {% for page in sorted_pages %}
         <a href="{{ page.url }}" style="margin: 10px;">{{ page.title }}</a>
         {% endfor %}
     </nav>
 
-
     <a href="https://forms.gle/dYkJYWZVAa7stD2w8" target="_blank"
-        style="padding: 10px 20px; background-color: #000000; color: white; text-decoration: none; border-radius: 5px; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.25);">Join FPN</a>
+        style="margin: 10px; padding: 10px 20px; background-color: #000000; color: white; text-decoration: none; border-radius: 5px; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.25); display:inline-block;">Join FPN</a>
     <a href="/donate"
-        style="padding: 10px 20px; background-color: #E4312b; color: white; text-decoration: none; border-radius: 5px; margin-left: 10px; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.25);">Donate</a>
+        style="margin: 10px; padding: 10px 20px; background-color: #E4312b; color: white; text-decoration: none; border-radius: 5px; margin-left: 10px; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.25); display:inline-block;">Donate</a>
     <a href="/join"
-        style="padding: 10px 20px; background-color: #149954; color: white; text-decoration: none; border-radius: 5px; margin-left: 10px; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.25);">Newsletter</a>
+        style="margin: 10px; padding: 10px 20px; background-color: #149954; color: white; text-decoration: none; border-radius: 5px; margin-left: 10px; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.25); display:inline-block;">Newsletter</a>
 
-
-    <div style="margin-top: 30px;">
+    <div style="margin-top: 10px;">
         <p>&copy; {{ site.time | date: '%Y' }} Florida Palestine Network. All rights reserved.</p>
     </div>
 
