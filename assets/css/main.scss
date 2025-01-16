@@ -19,6 +19,7 @@ footer {
 }
 
 main {
+    margin-top: 40px;
     flex: 1; /* Allow the main content to grow and fill the available space */
 }
 
@@ -31,7 +32,6 @@ main {
     margin: 0 auto;
     padding: 20px;
     background-color: #172d13;
-    min-height: 95vh;
     box-shadow: 0 20px 40px 0 rgba(0,0,0,0.5);
     position: relative; /* Optional: if you want to control stacking context */
     z-index: 1; /* Ensure it is below the topnav */
@@ -255,11 +255,14 @@ p img {
     align-items: center; /* Center items vertically */
     background-color: #149954;
     overflow: hidden;
-    margin: 0 auto; /* Center the topnav horizontally */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    margin: 0 auto; /* Center it horizontally */
     padding: 0; /* Remove padding */
     max-width: 990px; /* Set the maximum width */
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
-    position: relative; /* Optional: if you want to control stacking context */
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+    position: fixed; /* Optional: if you want to control stacking context */
     z-index: 10; /* Ensure it is above the narrow section */
 }
 
@@ -279,6 +282,7 @@ p img {
 .topnav a:hover:not(:first-child) {
     background-color: white;
     color: #e4312b;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
 }
 
 /* Add an active class to highlight the current page */
