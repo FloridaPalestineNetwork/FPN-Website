@@ -133,6 +133,10 @@ a:active {
 
 .button a {
     color: #149954;
+    display: block; /* Make the link fill the button */
+    width: 100%; /* Ensure it fills the button */
+    height: 100%; /* Ensure it fills the button */
+    line-height: 1.5; /* Center text vertically */
 }
 
 .button a:visited {

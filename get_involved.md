@@ -25,20 +25,12 @@ order: 5
 </a>
 </div>
 
-(Email Notification Signup)
-
 ## Support Palestine
-### Support FPN Directly
-
-### Support FPN Through Supply Donations
-
-### Other Palestinian Organizations
 <div class="button-container">
     <div class="button">
     <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=HVV36DB8FR9W6&source=url" target="_blank">Palestine Aid Society of America</a>
     </div>
 </div>
-
 
 ## Learn More
 <div class="button-container">
@@ -46,16 +38,12 @@ order: 5
     <a href="https://issuu.com/palestinianfeminists/docs/pfc_toolkit_-_final?link_id=7&can_id=54328934881cbe4997d20fb868edb9fc&source=email-new-resource-freedom-is-within-reach-pfc-toolkit&email_referrer=email_1193442&email_subject=new-resource-freedom-is-within-reach" target="_blank">Palestinian Feminist Collective Toolkit</a>
     </div>
     <div class="button">
-    <a href="http://deadlyexchange.org/" target="_blank">Resources on the Relationship Between IDF and US Police and Military</a>
-    </div>
-    <div class="button">
-    <a href="https://palestineishere.org/" target="_blank">Want to see how your city relates to Israel’s military forces?</a>
+    <a href="https://deadlyexchange.org/" target="_blank">Resources on the Relationship Between IDF and US Police and Military</a>
     </div>
     <div class="button">
     <a href="https://instagram.com/visualizing_palestine?utm_medium=copy_link" target="_blank">Educational Tools on Palestine</a>
     </div>
 </div>
-
 
 ## Petitions
 <div class="button-container">
@@ -64,8 +52,5 @@ order: 5
     </div>
     <div class="button">
     <a href="https://secure.everyaction.com/1UbhpW18o0214v5Vwnoh4w2" target="_blank">Florida Ceasefire</a>
-    </div>
-    <div class="button">
-    <a href="http://bit.ly/resignrandyfine" target="_blank">Resign Randy Fine Campaign</a>
     </div>
 </div>

@@ -4,4 +4,7 @@ title: Youth And Outreach
 permalink: /youth_and_outreach/
 menu: false
 ---
-Lorem ipsum odor amet, consectetuer adipiscing elit. Tristique inceptos potenti et eget; diam quisque pretium. Non malesuada torquent facilisis tincidunt at ante? Consequat est augue curabitur ridiculus neque. Euismod quisque facilisis augue accumsan cursus a. Placerat fermentum tincidunt pulvinar faucibus leo. Odio quam nec nam mauris hendrerit habitant iaculis. Faucibus dignissim aliquet dignissim at ultricies facilisi sodales. Pulvinar lacus massa, molestie mattis eget inceptos lacinia.
+<p style="text-align: justify;">The Youth and Outreach committee aims to engage all people with the culture of Palestine. From teaching Dabka class to working in close solidarity with university students, the Youth and Outreach committee is curial in ensuring Palestinian culture thrives.</p>
+
+## Dabka Class
+<p style="text-align: justify;">Come learn Dabka with skilled Palestinian dancing teachers. Events coming soon!</p>
