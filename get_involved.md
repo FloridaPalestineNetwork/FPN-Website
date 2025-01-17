@@ -15,13 +15,13 @@ order: 5
 ## Follow Us
 <div>
 <a href="https://instagram.com/floridapalestinenetwork" target="_blank">
-    <img src="/assets/icons/instagram.svg" alt="Instagram" height="40" style="filter: invert(1);">
+    <img src="/assets/icons/instagram.svg" alt="Instagram" height="30" style="filter: invert(1); margin: 0 20px;">
 </a>
 <a href="https://x.com/FloridaPaliNet" target="_blank">
-    <img src="/assets/icons/twitter.svg" alt="Twitter" height="40" style="filter: invert(1);">
+    <img src="/assets/icons/twitter.svg" alt="Twitter" height="30" style="filter: invert(1); margin: 0 20px;">
 </a>
 <a href="https://www.facebook.com/FloridaPalestineNetwork" target="_blank">
-    <img src="/assets/icons/facebook.svg" alt="Facebook" height="40" style="filter: invert(1);">
+    <img src="/assets/icons/facebook.svg" alt="Facebook" height="30" style="filter: invert(1); margin: 0 20px;">
 </a>
 </div>
 
