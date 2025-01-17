@@ -1,3 +1,4 @@
 url: "https://floridapalestinenetwork.org" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/" # the subpath of your site, e.g. /blog
-title: "FPN" # the name of your site, e.g. ACME Corp.
+title: "Florida Palestine Network" # the name of your site, e.g. ACME Corp.
+description: "Florida Palestine Network is a Palestinian woman founded and led organization struggling for the liberation of the Palestinian people and oppressed people everywhere."
