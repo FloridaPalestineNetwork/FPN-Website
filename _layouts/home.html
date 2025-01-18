@@ -15,22 +15,21 @@
                 <div class="column">
                     <h2>Next Event</h2>
                     {% assign next_event = nil %}
-                    {% assign closest_event_date = nil %}
 
                     {% for event in site.posts %}
-                    {% if event.categories contains "event" and event.event-date %}
-                    {% assign event_date = event.event-date | date: "%s" %}
-                    {% assign current_date = site.time | date: "%Y-%m-%d" | date: "%s"%}
-                    {% if event_date > current_date %}
-                    {% if closest_event_date == nil or event_date < closest_event_date %} {% assign
-                        closest_event_date=event_date %} {% assign next_event=event %} {% endif %} {% endif %} {% endif
-                        %} {% endfor %} {% if next_event %} <a href="{{ next_event.url }}">
-                        <img class="image_post" src="{{ next_event.cover_image }}"
-                            alt="{{ next_event.title }} cover image">
-                        </a>
+                        {% if event.categories contains "event" and event.event-date %}
+                            {% assign event_date = event.event-date | date: "%s" %}
+                            {% assign current_date = site.time | date: "%Y-%m-%d" | date: "%s"%}
+                            {% if event_date >= current_date %}
+                                {% assign next_event = event %}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if next_event %}
+                        <a href="{{ next_event.url }}"><img class="image_post" src="{{ next_event.cover_image }}" alt="{{ next_event.title }} cover image"></a>
                         {% else %}
                         <p>No upcoming events.</p>
-                        {% endif %}
+                    {% endif %}
                 </div>
 
 
@@ -38,12 +37,9 @@
                     <h2>Latest Article</h2>
                     {% assign latest_article = site.posts | where: "categories", "article" | first %}
                     {% if latest_article %}
-                    <a href="{{ latest_article.url }}">
-                        <img class="image_post" src="{{ latest_article.cover_image }}"
-                            alt="{{ latest_article.title }} cover image">
-                    </a>
-                    {% else %}
-                    <p>No articles available.</p>
+                        <a href="{{ latest_article.url }}"><img class="image_post" src="{{ latest_article.cover_image }}" alt="{{ latest_article.title }} cover image"></a>
+                        {% else %}
+                        <p>No articles available.</p>
                     {% endif %}
                 </div>
 
@@ -51,11 +47,9 @@
                     <h2>Latest News</h2>
                     {% assign news = site.posts | where: "categories", "news" | sort: "date" | reverse | limit: 3 %}
                     {% for news in news %}
-                    <div class="news">
-                        <a href="{{ news.link }}" target="_blank">
-                            <h4>{{ news.title }}</h4>
-                        </a>
-                        <p>{{ news.date | date: "%B %d, %Y" }}</p>
+                        <div class="news">
+                            <a href="{{ news.link }}" target="_blank"><h4>{{ news.title }}</h4></a>
+                            <p>{{ news.date | date: "%B %d, %Y" }}</p>
                     </div>
                     {% endfor %}
                 </div>
