@@ -12,14 +12,14 @@
             <h2 style="margin-bottom: 0px;">Upcoming Events</h2>
             <div class="grid">
                 {% assign upcoming_events = site.posts | where: "categories", "event" %}
-                {% assign current_time = site.time | date: "%s" %}
+                {% assign current_time = site.time | date: "%Y-%m-%d" | date: "%s"%}
 
                 {% assign sorted_upcoming_events = upcoming_events | sort: "event-date" %}
 
                 {% for event in sorted_upcoming_events %}
                 {% if event.event-date %}
                 {% assign event_date = event.event-date | date: "%s" %}
-                {% if event_date > current_time %}
+                {% if event_date >= current_time %}
                 <div class="event">
                     <p>{{ event.event-date | date: "%B %d, %Y" }}</p>
                     <a href="{{ event.url }}">
@@ -37,11 +37,11 @@
             <h2 style="margin-bottom: 0px;">Past Events</h2>
             <div class="grid">
                 {% assign past_events = site.posts | where: "categories", "event" %}
-                {% assign current_time = site.time | date: "%s" %}
+                {% assign current_time = site.time | date: "%Y-%m-%d" | date: "%s"%}
                 {% for event in past_events %}
                 {% if event.event-date %}
                 {% assign event_date = event.event-date | date: "%s" %}
-                {% if event_date <= current_time %} 
+                {% if event_date < current_time %} 
                 <div class="event">
                     <p>{{ event.event-date | date: "%B %d, %Y" }}</p>
                     <a href="{{ event.url }}">

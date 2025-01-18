@@ -20,7 +20,7 @@
                     {% for event in site.posts %}
                     {% if event.categories contains "event" and event.event-date %}
                     {% assign event_date = event.event-date | date: "%s" %}
-                    {% assign current_date = site.time | date: "%s" %}
+                    {% assign current_date = site.time | date: "%Y-%m-%d" | date: "%s"%}
                     {% if event_date > current_date %}
                     {% if closest_event_date == nil or event_date < closest_event_date %} {% assign
                         closest_event_date=event_date %} {% assign next_event=event %} {% endif %} {% endif %} {% endif
