@@ -3,7 +3,7 @@ layout: page
 title: About Us
 permalink: /about_us/
 menu: true
-order: 6
+order: 7
 ---
 <p style="text-align: justify;">Founded in 2011, the Florida Palestine Network is a grassroots, intergenerational collective dedicated to confronting and dismantling the systems of complicity that perpetuate Israel’s genocidal violence and occupation of Palestine. We organize in alignment with the global movement for Palestinian liberation, challenging the colonial forces that continue to dispossess, oppress, and dehumanize the Palestinian people.</p>
 
