@@ -139,7 +139,7 @@ p img {
   display: block;
   /* Makes the image a block element */
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   /* Center the image if desired */
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
