@@ -6,9 +6,9 @@ event-time: 2-5PM
 event-location: Coral Springs
 layout: post-event
 author: 
-cover_image: "/assets/images/event_beginners_tatreez_workshop_with_badan_collective.jpg"
+cover_image: "/assets/images/beginners_tatreez_workshop_with_badan_collective/cover.jpg"
 categories: [event]
 tags: []
 ---
 
-![Beginners Tatreez Workshop with Badan Collective](/assets/images/event_beginners_tatreez_workshop_with_badan_collective.jpg)
+![1](/assets/images/beginners_tatreez_workshop_with_badan_collective/1.jpg)

@@ -6,11 +6,11 @@ event-time: 1PM
 event-location: Orlando Downtown Library
 layout: post-event
 author: 
-cover_image: "/assets/images/inauguration_of_resistance_town_hall_1.jpeg"
+cover_image: "/assets/images/inauguration_of_resistance_town_hall/cover.jpg"
 categories: [event]
 tags: []
 ---
 
-![Inauguration of Resistance Town Hall](/assets/images/inauguration_of_resistance_town_hall_1.jpeg)
-![Inauguration of Resistance Town Hall](/assets/images/inauguration_of_resistance_town_hall_2.jpeg)
-![Inauguration of Resistance Town Hall](/assets/images/inauguration_of_resistance_town_hall_3.jpeg)
+![1](/assets/images/inauguration_of_resistance_town_hall/1.jpg)
+![2](/assets/images/inauguration_of_resistance_town_hall/2.jpg)
+![3](/assets/images/inauguration_of_resistance_town_hall/3.jpg)

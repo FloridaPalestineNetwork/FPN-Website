@@ -3,14 +3,14 @@ title: The Legacy of Genocide Joe
 date: 2025-01-12
 layout: post-article
 author: FPN Political Education Team
-cover_image: "/assets/images/article_the_legacy_of_genocide_joe_1.png"
+cover_image: "/assets/images/the_legacy_of_genocide_joe/cover.png"
 categories: [article]
 tags: []
 excerpt: 
 ---
 
-![Keep Fighting In 2025 1](/assets/images/article_the_legacy_of_genocide_joe_1.png)
-![Keep Fighting In 2025 2](/assets/images/article_the_legacy_of_genocide_joe_2.png)
-![Keep Fighting In 2025 3](/assets/images/article_the_legacy_of_genocide_joe_3.png)
-![Keep Fighting In 2025 4](/assets/images/article_the_legacy_of_genocide_joe_4.png)
-![Keep Fighting In 2025 5](/assets/images/article_the_legacy_of_genocide_joe_5.png)
+![1](/assets/images/the_legacy_of_genocide_joe/1.png)
+![2](/assets/images/the_legacy_of_genocide_joe/2.png)
+![3](/assets/images/the_legacy_of_genocide_joe/3.png)
+![4](/assets/images/the_legacy_of_genocide_joe/4.png)
+![5](/assets/images/the_legacy_of_genocide_joe/5.png)

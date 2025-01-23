@@ -6,10 +6,10 @@ event-time: 6:30PM
 event-location: In-Person and Online
 layout: post-event
 author: 
-cover_image: "/assets/images/event_january_book_club_schedule_1.jpg"
+cover_image: "/assets/images/january_book_club_schedule/cover.jpg"
 categories: [event]
 tags: []
 ---
 
-![January Book Club](/assets/images/event_january_book_club_schedule_1.jpg)
-![January Book Club](/assets/images/event_january_book_club_schedule_2.jpg)
+![1](/assets/images/january_book_club_schedule/1.jpg)
+![2](/assets/images/january_book_club_schedule/2.jpg)

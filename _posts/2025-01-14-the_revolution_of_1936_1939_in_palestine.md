@@ -6,11 +6,11 @@ event-time: 2PM
 event-location: "Mariam Coffee"
 layout: post-event
 author: 
-cover_image: "/assets/images/the_revolution_of_1936_1939_in_palestine_1.jpeg"
+cover_image: "/assets/images/the_revolution_of_1936_1939_in_palestine/cover.jpg"
 categories: [event]
 tags: []
 ---
 
-![Inauguration of Resistance Town Hall](/assets/images/the_revolution_of_1936_1939_in_palestine_1.jpeg)
-![Inauguration of Resistance Town Hall](/assets/images/the_revolution_of_1936_1939_in_palestine_2.jpeg)
-![Inauguration of Resistance Town Hall](/assets/images/the_revolution_of_1936_1939_in_palestine_3.jpeg)
+![1](/assets/images/the_revolution_of_1936_1939_in_palestine/1.jpg)
+![2](/assets/images/the_revolution_of_1936_1939_in_palestine/2.jpg)
+![3](/assets/images/the_revolution_of_1936_1939_in_palestine/3.jpg)
