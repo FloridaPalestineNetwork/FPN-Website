@@ -15,23 +15,24 @@
                 <div class="column">
                     <h2>Next Event</h2>
                     {% assign next_event = nil %}
-
+                    {% assign current_date = site.time | date: "%s" %}
+                    
                     {% for event in site.posts %}
                         {% if event.categories contains "event" and event.event-date %}
                             {% assign event_date = event.event-date | date: "%s" %}
-                            {% assign current_date = site.time | date: "%Y-%m-%d" | date: "%s"%}
                             {% if event_date >= current_date %}
                                 {% assign next_event = event %}
+                                {% break %}  {# Exit the loop after finding the next event #}
                             {% endif %}
                         {% endif %}
                     {% endfor %}
+
                     {% if next_event %}
                         <a href="{{ next_event.url }}"><img class="image_post" src="{{ next_event.cover_image }}" alt="{{ next_event.title }} cover image"></a>
                         {% else %}
                         <p>No upcoming events.</p>
                     {% endif %}
                 </div>
-
 
                 <div class="column">
                     <h2>Latest Article</h2>

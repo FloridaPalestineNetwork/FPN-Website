@@ -1,5 +1,5 @@
 ---
-title: Beginners Tatreez Workshop with Badan Collective
+title: "Beginners Tatreez Workshop with Badan Collective"
 date: 2025-01-01
 event-date: 2025-02-09
 event-time: 2-5PM
