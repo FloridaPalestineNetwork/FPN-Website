@@ -15,14 +15,20 @@
                 <div class="column">
                     <h2>Next Event</h2>
                     {% assign next_event = nil %}
-                    {% assign current_date = site.time | date: "%s" %}
-                    
+                    {% assign today_date = site.time | date: "%s" %}
+
                     {% for event in site.posts %}
                         {% if event.categories contains "event" and event.event-date %}
                             {% assign event_date = event.event-date | date: "%s" %}
-                            {% if event_date >= current_date %}
-                                {% assign next_event = event %}
-                                {% break %}  {# Exit the loop after finding the next event #}
+                            {% if event_date > today_date %}
+                                {% if next_event == nil %}
+                                    {% assign next_event = event %}
+                                {% else %}
+                                    {% assign next_event_date = next_event.event-date | date: "%s" %}
+                                    {% if event_date < next_event_date %}
+                                        {% assign next_event = event %}
+                                    {% endif %}
+                                {% endif %}
                             {% endif %}
                         {% endif %}
                     {% endfor %}

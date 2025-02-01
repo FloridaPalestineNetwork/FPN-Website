@@ -1,14 +1,14 @@
----
-layout: page
-title: Political Education
-permalink: /political_education/
-menu: false
----
-<p style="text-align: justify;">The Florida Palestine Network's Political Education committee is involved in writing all FPN communications and statements. Deeply rooted in theory and praxis, the PE committee strives to bring the light of truth to the darkness of ignorance.</p>
+<!DOCTYPE html>
+{% include header.html %}
 
-<h2>Film Night</h2>
-<div class="grid">
-                {% assign upcoming_events = site.posts | where: "categories", "event" | where: "tags", "film_night" %}
+<body>
+    {% include nav.html %}
+
+    <div class="narrow">
+        <main>
+            <h1>{{page.title}}</h1>
+            <div class="grid">
+                {% assign upcoming_events = site.posts | where: "categories", "event" | where: "tags", "ticket" %}
                 {% assign current_time = site.time | date: "%Y-%m-%d" | date: "%s"%}
 
                 {% assign sorted_upcoming_events = upcoming_events | sort: "event-date" %}
@@ -30,3 +30,12 @@ menu: false
                 {% endfor %}
 
             </div>
+        </main>
+    {% include footer.html %}
+    </div>
+</body>
+
+
+{% include nav.js %}
+
+</html>
