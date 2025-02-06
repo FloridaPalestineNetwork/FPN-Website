@@ -8,7 +8,7 @@ order: 5
 
 <div class="button-container">
     <div class=button>
-    <a href="https://forms.gle/dYkJYWZVAa7stD2w8" target="_blank">Join FPN</a>
+    <a href="https://docs.google.com/forms/d/1Se3ZI0bzH-0uMW5VCHVEwHzN8XiIAdkLon9ztZCK9bo" target="_blank">Join FPN</a>
     </div>
 </div>
 
