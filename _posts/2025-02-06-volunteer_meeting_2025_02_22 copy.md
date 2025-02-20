@@ -1,0 +1,22 @@
+---
+title: "Community Iftar: A Ramadan Night of Reverence, Renewal & Recommitment to Palestine"
+date: 2025-02-02
+event-date: 2025-03-11
+event-time: 1:30 PM
+event-location: RSVP
+layout: post-event
+author: 
+cover_image: "/assets/images/community_iftar_2025_03_11/cover.jpg"
+categories: [event]
+tags: 
+---
+
+<div class="button-container">
+    <div class=button>
+    <a href="bit.ly/orlandoiftar" target="_blank">RSVP</a>
+    </div>
+</div>
+
+![1](/assets/images/community_iftar_2025_03_11/1.jpg)
+
+You’re Invited to a Community Iftar: A Ramadan Night of Reverence, Renewal & Recommitment to Palestine 🗓: March 11, 2025 ⏰: 6PM 📍: Kabsah Yemeni Restaurant 🎟️: Tickets are a sliding scale & proceeds will go to MECA. Spots are limited and can be purchased via bit.ly/orlandoiftar Join PFC, FPN, KFL and MWO this Ramadan as we come together to honor the unyielding resistance of Palestine and reaffirm our collective commitment to its liberation. This night is an invitation to renew our struggle for justice, to reflect on our role in the ongoing fight, and to reinvigorate our intentions to liberate Palestine from occupation and oppression. We will express our gratitude to those who have consistently stood in solidarity with Palestine, recognizing that their unwavering commitment strengthens the movement. Our gathering will serve as a moment of reflection and a recommitment to the path of Palestinian revolutionaires and countless others have paved before us—understanding that liberation is not a distant hope, but a struggle we wage together. As we break our fast, we will reaffirm that our struggle for Palestine is inseparable from our faith in justice and the liberation of all oppressed peoples. This is a collective call to action—a call to continue the work, to stand stronger, and to move forward in solidarity, knowing that the path to freedom requires both persistence and unity. A meal will be shared, followed by a program led by our host committee. All ticket proceeds and donations will go to support the Middle East Children’s Alliance (MECA), standing with Palestine and its people. For justice. For liberation. For Palestine.

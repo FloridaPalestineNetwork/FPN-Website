@@ -20,3 +20,17 @@ menu: false
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2QpPLE-Mfhqt_TXJcpmWXo28TC7Wyw0HeJvi-7JksiJeRWw/viewform" target="_blank">Ditch The Dems Pledge</a>
     </div>
 </div>
+
+<div class="grid">
+    {% assign articles = site.posts | where: "categories", "article" | where: "tags", "DTD" | sort: "date" | reverse %}
+    {% for article in articles %}
+    <div class="article">
+        <p>{{ article.date | date: "%B %d, %Y" }}</p>
+        <a href="{{ article.url }}">
+            {% if article.cover_image %}
+            <img src="{{ article.cover_image }}" alt="{{ article.title }} cover image">
+            {% endif %}
+        </a>
+    </div>
+    {% endfor %}
+</div>

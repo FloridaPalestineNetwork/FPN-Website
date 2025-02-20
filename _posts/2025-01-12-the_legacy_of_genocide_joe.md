@@ -5,7 +5,7 @@ layout: post-article
 author: FPN Political Education Team
 cover_image: "/assets/images/the_legacy_of_genocide_joe/cover.png"
 categories: [article]
-tags: []
+tags: [DTD]
 excerpt: 
 ---
 
