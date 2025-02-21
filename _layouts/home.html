@@ -52,14 +52,15 @@
 
                 <div class="column">
                     <h2>Latest News</h2>
-                    {% assign news = site.posts | where: "categories", "news" | sort: "date" | reverse | limit: 3 %}
-                    {% for news in news %}
+                    {% assign latest_news = site.posts | where: "categories", "news" | sort: "date" | reverse | slice: 0, 3 %}
+                    {% for news in latest_news %}
                         <div class="news">
                             <a href="{{ news.link }}" target="_blank"><h4>{{ news.title }}</h4></a>
                             <p>{{ news.date | date: "%B %d, %Y" }}</p>
-                    </div>
+                        </div>
                     {% endfor %}
                 </div>
+
             </div>
         </main>
         {% include footer.html %}
