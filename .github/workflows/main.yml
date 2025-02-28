@@ -1,6 +1,8 @@
 name: Build Jekyll Site
 
 on:
+  schedule:
+    - cron: '*/30 * * * *'  # This runs the workflow every 30 minutes
   push:
     branches:
       - main  # Change this to your default branch if it's not 'main'
