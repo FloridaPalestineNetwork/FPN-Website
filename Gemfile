@@ -1,3 +1,3 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.4"  # Specify the version of Jekyll you want to use
+gem "jekyll", "~> 4.4.1"  # or simply use "jekyll"
