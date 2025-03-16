@@ -23,12 +23,14 @@ jobs:
         with:
           ruby-version: '3.0'  # Specify the Ruby version you need
 
-      - name: Install Jekyll
-        run: gem install jekyll
+      - name: Install Bundler
+        run: gem install bundler
+
+      - name: Install dependencies
+        run: bundle install
 
       - name: Build Jekyll site
-        run: |
-          jekyll build
+        run: bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'  # Only deploy on main branch
