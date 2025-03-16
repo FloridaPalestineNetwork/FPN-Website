@@ -34,10 +34,11 @@ jobs:
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'  # Only deploy on main branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  # Use the PAT token
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add -A
           git commit -m "Rebuild site" || echo "No changes to commit"
-          git push origin main  # Change this if you want to push to a different branch
-
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/FloridaPalestineNetwork/FPN-Website.git HEAD:main  # Change this if you want to push to a different branch
