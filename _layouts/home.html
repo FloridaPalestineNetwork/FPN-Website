@@ -15,7 +15,9 @@
                 <div class="column">
                     <h2>Next Event</h2>
                     {% assign next_event = nil %}
+                    
                     {% assign today_date = site.time | date: "%s" %}
+                    {% assign end_of_today = current_time | append: " 23:59:59" | date: "%s" %}
 
                     {% for event in site.posts %}
                         {% if event.categories contains "event" and event.event-date %}
