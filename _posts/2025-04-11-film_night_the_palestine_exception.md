@@ -17,7 +17,7 @@ tags:
 <i>If you cannot afford a ticket please reach out to us and we will accommodate.</i></p>
 <div class="button-container">
     <div class="button">
-    <a href="" target="_blank">Tickets Coming Soon</a>
+    <a href="https://givebutter.com/2pKfB9" target="_blank">Buy Ticket</a>
     </div>
 </div>
 
@@ -25,5 +25,6 @@ tags:
 ![2](/assets/images/2025-04-11-film_night_the_palestine_exception/2.jpeg)
 ![3](/assets/images/2025-04-11-film_night_the_palestine_exception/3.jpeg)
 <p>
-
+FPN and CFL SJP present Gaza Movie Night — continuing our 2025 film series with a screening of The Palestine Exception with a Q&A with Film Co-Director Jennifer Ruth.<br><br>
+A Fundraiser for MECA ❤️‍🩹
 </p>
