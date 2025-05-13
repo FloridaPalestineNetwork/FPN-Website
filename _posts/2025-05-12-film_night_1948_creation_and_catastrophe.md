@@ -21,7 +21,10 @@ tags:
 
 ![1](/assets/images/2025-05-12-film_night_1948_creation_and_catastrophe/1.jpg)
 
-<p>
-FPN and CFL SJP present Gaza Movie Night — continuing our 2025 film series with a screening of The Palestine Exception with a Q&A with Film Co-Director Jennifer Ruth.<br><br>
+<p style="text-align: left;">
+FPN and CFL SJP present Nakba Film Night to commemorate 77 years of the ongoing Nakba, as a part of our collaborative 2025 film series with a screening of 1948 Creation and Catastrophe: Documentary Film about the Nakba.<br/><br/>
+
+Through riveting and moving personal recollections of Palestinians, 1948: Creation & Catastrophe reveals the shocking events of the most pivotal year with one of the largest catastrophes in the world. It tells the story of the violent establishment of Israel as seen through the eyes of the people who lived it. It is simply not possible to make sense of what is happening in Palestine today without an understanding of 1948.<br/><br/>
+
 A Fundraiser for MECA ❤️‍🩹
 </p>
