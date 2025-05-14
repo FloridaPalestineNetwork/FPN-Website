@@ -8,7 +8,9 @@ layout: post-event
 author: 
 cover_image: "/assets/images/2025-05-12-film_night_1948_creation_and_catastrophe/1.jpg"
 categories: [event]
-tags: 
+tags:
+- film_night
+- ticket
 ---
 
 <p>Sliding scale ticket cost.
