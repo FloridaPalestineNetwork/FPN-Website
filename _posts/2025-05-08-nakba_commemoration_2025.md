@@ -12,3 +12,9 @@ tags:
 ---
 
 ![1](/assets/images/2025-05-08-nakba_commemoration_2025/1.jpg)
+![1](/assets/images/2025-05-08-nakba_commemoration_2025/2.jpg)
+![1](/assets/images/2025-05-08-nakba_commemoration_2025/3.jpg)
+![1](/assets/images/2025-05-08-nakba_commemoration_2025/4.jpg)
+![1](/assets/images/2025-05-08-nakba_commemoration_2025/5.jpg)
+![1](/assets/images/2025-05-08-nakba_commemoration_2025/6.jpg)
+![1](/assets/images/2025-05-08-nakba_commemoration_2025/7.jpg)
