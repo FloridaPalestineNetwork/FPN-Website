@@ -17,19 +17,15 @@
                     {% assign next_event = nil %}
                     
                     {% assign today_date = site.time | date: "%s" %}
-                    {% assign end_of_today = current_time | append: " 23:59:59" | date: "%s" %}
+                    {% assign yesterday_date = today_date | minus: 86400 %}  <!-- Subtracting 86400 seconds (1 day) -->
 
                     {% for event in site.posts %}
                         {% if event.categories contains "event" and event.event-date %}
-                            {% assign event_date = event.event-date | date: "%s" %}
-                            {% if event_date > today_date %}
-                                {% if next_event == nil %}
+                            {% assign event_date = event.event-date | date: "%s" | plus: 0 %}  <!-- Convert to number -->
+                            {% if event_date > yesterday_date %}
+                                {% assign next_event_date = next_event.event-date | date: "%s" | plus: 0 %}  <!-- Convert to number -->
+                                {% if next_event == nil or event_date < next_event_date %}
                                     {% assign next_event = event %}
-                                {% else %}
-                                    {% assign next_event_date = next_event.event-date | date: "%s" %}
-                                    {% if event_date < next_event_date %}
-                                        {% assign next_event = event %}
-                                    {% endif %}
                                 {% endif %}
                             {% endif %}
                         {% endif %}
@@ -37,7 +33,7 @@
 
                     {% if next_event %}
                         <a href="{{ next_event.url }}"><img class="image_post" src="{{ next_event.cover_image }}" alt="{{ next_event.title }} cover image"></a>
-                        {% else %}
+                    {% else %}
                         <p>No upcoming events.</p>
                     {% endif %}
                 </div>
