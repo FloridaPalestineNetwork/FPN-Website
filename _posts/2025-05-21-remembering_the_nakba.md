@@ -11,4 +11,4 @@ categories: [event]
 tags: 
 ---
 
-![1](/assets/images/2025-05-21-remembering_the_nakba/1.png)
+![1](/assets/images/2025-05-21-remembering_the_nakba/1.jpg)
