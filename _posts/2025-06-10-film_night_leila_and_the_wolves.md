@@ -6,7 +6,7 @@ event-time: 6:30 PM
 event-location: Knowledge For Living
 layout: post-event
 author: 
-cover_image: "/assets/images/2025-06-10-film_night_leila_and_the_wolves/1.jpeg"
+cover_image: "/assets/images/2025-06-10-film_night_leila_and_the_wolves/1.png"
 categories: [event]
 tags:
 - film_night
@@ -21,10 +21,10 @@ tags:
     </div>
 </div>
 
-![1](/assets/images/2025-06-10-film_night_leila_and_the_wolves/1.jpeg)
+![1](/assets/images/2025-06-10-film_night_leila_and_the_wolves/1.png)
 
 <p style="text-align: left;">
-FPN and CFL SJP present Gaza Film Night<br/><br/>
+FPN, CFL SJP, and PFC present Gaza Film Night<br/><br/>
 
 <br/><br/>
 
