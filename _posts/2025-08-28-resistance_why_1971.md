@@ -1,6 +1,6 @@
 ---
 title: Film Night - Resistance - Why (1971)
-date: 2025-08-28
+date: 2025-08-17
 event-date: 2025-08-28
 event-time: 6:30 PM
 event-location: Knowledge For Living
