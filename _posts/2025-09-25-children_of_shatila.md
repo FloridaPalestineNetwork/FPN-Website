@@ -3,7 +3,7 @@ title: Film Night - Children of Shatila
 date: 2025-09-11
 event-date: 2025-09-25
 event-time: 6:30 PM
-event-location: Knowledge For Living
+event-location: Masjid Al Haq - 545 W Central Blvd
 layout: post-event
 author: 
 cover_image: "/assets/images/2025-09-25-children_of_shatila/1.jpg"
