@@ -3,10 +3,10 @@ title: Film Night - Ghost Hunting
 date: 2025-10-16
 event-date: 2025-10-30
 event-time: 6:30 PM
-event-location: Knowledge For Living
+event-location: Masjid Al Haq - 545 W Central Blvd
 layout: post-event
 author: 
-cover_image: "/assets/images/2025-10-16-ghost_hunting/1.jpg"
+cover_image: "/assets/images/2025-10-16-ghost_hunting/1.png"
 categories: [event]
 tags:
 - film_night
